@@ -1,7 +1,31 @@
 {
-  "private": true,
-  "devDependencies": {
-    "gulp": "^3.8.8",
-    "laravel-elixir": "*"
+  "name": "maritza",
+  "version": "1.0.0",
+  "description": "A blogging platform that provide a simple API for themes",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtrezza/maritza.git"
+  },
+  "keywords": [
+    "blog",
+    "laravel",
+    "php",
+    "maritza"
+  ],
+  "author": "Jose Trezza <im@jtrezza.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtrezza/maritza/issues"
+  },
+  "homepage": "https://github.com/jtrezza/maritza#readme",
+  "dependencies": {
+    "jquery": "^2.1.4"
   }
 }
