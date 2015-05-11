@@ -1,13 +1,18 @@
 {
   "name": "maritza",
   "version": "1.0.0",
-  "description": "A blogging platform that provide a simple API for themes",
+  "description": "A blogging platform that provides a simple API for themes",
   "main": "gulpfile.js",
   "directories": {
-    "test": "tests"
+    "test": "tests_js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle-js": "browserify resources/assets/js/posts.js -o public/js/posts.js",
+    "bundle-css": "lessc resources/assets/less/app.less > public/css/app.css",
+    "lib-jquery": "cp node_modules/jquery/dist/* public/js/lib/",
+    "lib-twbs": "cp node_modules/bootstrap/dist/js/bootstrap.min.js public/js/lib/",
+    "copy-js-libs": "npm run lib-jquery && npm run lib-twbs"
   },
   "repository": {
     "type": "git",
@@ -26,6 +31,9 @@
   },
   "homepage": "https://github.com/jtrezza/maritza#readme",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "backbone": "^1.1.2",
+    "bootstrap": "3.3.*",
+    "jquery": "2.1.*",
+    "underscore": "^1.8.3"
   }
 }
