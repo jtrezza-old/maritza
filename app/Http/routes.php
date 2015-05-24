@@ -17,6 +17,9 @@ Route::get('home', 'HomeController@index');
 
 Route::resource('mz-admin/posts', 'PostController');
 
+Route::post('parser/parse', 'ParserController@Parse');
+//Route::controller('parser', 'ParserController');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

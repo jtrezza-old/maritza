@@ -20,7 +20,7 @@
                 <div class="col-lg-6 col-md-6">
                     <textarea name="postLive" id="txaPostLive" cols="30" rows="10" class="txaPostText"></textarea>
                 </div>
-                <div class="col-lg-6 col-md-6">asdgasdg</div>
+                <div class="col-lg-6 col-md-6" id="boxPreview">asdgasdg</div>
             </div>
         </div>
 
